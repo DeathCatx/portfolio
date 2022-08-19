@@ -1,0 +1,24 @@
+{
+	"covid-dashboard": {
+		"name": "COVID-19 Dashboard",
+		"desc": "A PWA compatible Web application for Covid-19 pandemic, with visualization of graph, table, and map.",
+		"tags": [
+			"PWA", "Statistical"
+		],
+		"stacks": [
+			"VueJS","HTML","CSS","JavaScript"
+		],
+		"link": "https://github.com/DeathCatx/covid-dashboard"
+	},
+	"bmi-calculator": {
+		"name": "BMI Calculator",
+		"desc": "A BMI calculator app with features like account binding, historical charts, and health advices.",
+		"tags": [
+			"Phone App", "Statistical", "Firebase"
+		],
+		"stacks": [
+			"Flutter","Dart"
+		],
+		"link": "https://github.com/DeathCatx/BMI"
+	}
+}
