@@ -4,6 +4,7 @@ import {
   Flex,
   Heading,
   Image,
+  Link,
   Stack,
   Text,
   useBreakpointValue,
@@ -42,16 +43,17 @@ export default function SplitScreen() {
 					Self-motivated and passionate fresh graduate looking for hands-on experience in the real working environment and situations in the IT field. Proficient in a range of modern technologies including Python and Java.
           </Text>
 					<Box>
-						<Button
-							verticalAlign={'true'}
-							rightIcon={<FaRegFileAlt/>}
-							bg={'blue.400'}
-							color={'white'}
-							_hover={{
-								bg: 'blue.500',
-							}}>
-							Get Resume
-						</Button>
+            <Link href={"/portfolio/assets/resume.pdf"} style={{ textDecoration: 'none' }} target = "_blank">
+              <Button
+                verticalAlign={'true'}
+                rightIcon={<FaRegFileAlt/>}
+                colorScheme={'twitter'}
+                _hover={{
+                  bg: 'blue.500',
+                }}>
+                Get Resume
+              </Button>
+            </Link>
 					</Box>
         </Stack>
       </Flex>

@@ -20,18 +20,22 @@ type ProjectList = {
 	tags: string[];
 	stacks: string[];
 	link: string;
+	pic: string;
 }
 
-const CreateCard = ( {name, desc, tags, stacks, link}: ProjectList ) => (
+const CreateCard = ( {name, desc, tags, stacks, link, pic}: ProjectList ) => (
 	<Center py={6}>
       <Box
         maxW={'445px'}
         w={'full'}
         bg={useColorModeValue('white', 'gray.900')}
-        boxShadow={'2xl'}
+        boxShadow={'xl'}
         rounded={'md'}
         p={6}
-        overflow={'hidden'}>
+        overflow={'hidden'}
+				transition= {"transform 0.25s ease-in-out"}
+				_hover={{transform: 'scale(1.05, 1.05)'}}
+				marginInline={'5'}>
         <Box
           h={'210px'}
           bg={'gray.100'}
@@ -43,9 +47,8 @@ const CreateCard = ( {name, desc, tags, stacks, link}: ProjectList ) => (
 						minInlineSize={'100%'}
 						height={'100%'}
 						fit={'cover'}
-            src={
-              'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-            }
+            src={`/portfolio/assets/${pic}.png`}
+						alt={name}
           />
         </Box>
         <Stack>
@@ -74,7 +77,7 @@ const CreateCard = ( {name, desc, tags, stacks, link}: ProjectList ) => (
           </Text>
         </Stack>
         <Stack direction={'row-reverse'} marginTop={'5'}>
-					<Link href={link} isExternal>
+					<Link href={link} isExternal style={{ textDecoration: 'none' }}>
 						<Button aria-label="Link">
 							More
 						</Button>
@@ -99,6 +102,7 @@ export default function Projects() {
 							tags={Objects[1].tags}
 							stacks={Objects[1].stacks}
 							link={Objects[1].link}
+							pic={Objects[1].pic}
 							key={Objects[0]}/>
 						))}
 				</Wrap>

@@ -8,7 +8,8 @@
 		"stacks": [
 			"VueJS","HTML","CSS","JavaScript"
 		],
-		"link": "https://github.com/DeathCatx/covid-dashboard"
+		"link": "https://github.com/DeathCatx/covid-dashboard",
+		"pic": "covidDashboard"
 	},
 	"bmi-calculator": {
 		"name": "BMI Calculator",
@@ -19,6 +20,7 @@
 		"stacks": [
 			"Flutter","Dart"
 		],
-		"link": "https://github.com/DeathCatx/BMI"
+		"link": "https://github.com/DeathCatx/BMI",
+		"pic": "bmi"
 	}
 }

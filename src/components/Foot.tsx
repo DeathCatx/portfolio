@@ -34,20 +34,20 @@ export default function Foot() {
             flexGrow: 1,
             ml: 8,
           }}>
-          <Container as={Stack} maxW={'6xl'} centerContent>
+          <Container as={Stack} centerContent>
 						<Stack direction={'row'} spacing={6}>
               <Tooltip label='LinkedIn'>
-                <Link href={'https://www.linkedin.com/in/eugene-tan-kok-yew/'}>
+                <Link href={'https://www.linkedin.com/in/eugene-tan-kok-yew/'} style={{ textDecoration: 'none' }}>
                   <IconButton aria-label='LinkedIn' isRound icon={<FaLinkedinIn />}/>
                 </Link>
               </Tooltip>
               <Tooltip label='Resume'>
-                <Link href={'#'}>
+                <Link href={"/portfolio/assets/resume.pdf"} style={{ textDecoration: 'none' }} target = "_blank">
                   <IconButton aria-label='Resume' isRound icon={<FaRegFileAlt />}/>
                 </Link>
               </Tooltip>
               <Tooltip label='GitHub'>
-                <Link href={'https://github.com/DeathCatx'}>
+                <Link href={'https://github.com/DeathCatx'} style={{ textDecoration: 'none' }}>
                   <IconButton aria-label='GitHub' isRound icon={<FaGithub />}/>
                 </Link>
               </Tooltip>
