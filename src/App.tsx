@@ -5,16 +5,20 @@ import {
   theme,
   Divider,
 } from "@chakra-ui/react"
-import { ColorModeSwitcher } from "./ColorModeSwitcher"
+import { ColorModeSwitcher } from "./components/ColorModeSwitcher"
 import Foot from "./components/Foot"
 import Head from "./components/Head"
 import Skills from "./components/Skills"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
+import BacktoTop from "./components/BacktoTop"
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <ColorModeSwitcher justifySelf="flex-end" position={'fixed'}/>
+    <Box position={'fixed'} bottom={'2vh'} right={'2vh'} zIndex={'1'}>
+      <BacktoTop/>
+      <ColorModeSwitcher/>
+    </Box>
     <Box textAlign="center" fontSize="xl">
       <Head/>
     </Box>

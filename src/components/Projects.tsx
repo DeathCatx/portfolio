@@ -25,66 +25,66 @@ type ProjectList = {
 
 const CreateCard = ( {name, desc, tags, stacks, link, pic}: ProjectList ) => (
 	<Center py={6}>
-      <Box
-        maxW={'445px'}
-        w={'full'}
-        bg={useColorModeValue('white', 'gray.900')}
-        boxShadow={'xl'}
-        rounded={'md'}
-        p={6}
-        overflow={'hidden'}
-				transition= {"transform 0.25s ease-in-out"}
-				_hover={{transform: 'scale(1.05, 1.05)'}}
-				marginInline={'5'}>
-        <Box
-          h={'210px'}
-          bg={'gray.100'}
-          mt={-6}
-          mx={-6}
-          mb={6}
-          pos={'relative'}>
-          <Image
-						minInlineSize={'100%'}
-						height={'100%'}
-						fit={'cover'}
-            src={`/portfolio/assets/${pic}.png`}
-						alt={name}
-          />
-        </Box>
-        <Stack>
-					<Wrap>
-						{stacks.map((stack) => (
-							<Tag key={stack}>
-								{stack}
-							</Tag>
-						))}
-					</Wrap>
-          <Heading
-            color={useColorModeValue('gray.700', 'white')}
-            fontSize={'2xl'}
-            fontFamily={'body'}>
-            {name}
-          </Heading>
-					<Wrap>
-						{tags.map((tag) => (
-							<Badge key={tag} colorScheme='green'>
-								{tag}
-							</Badge>
-						))}
-					</Wrap>
-          <Text color={'gray.500'}>
-						{desc}
-          </Text>
-        </Stack>
-        <Stack direction={'row-reverse'} marginTop={'5'}>
-					<Link href={link} isExternal style={{ textDecoration: 'none' }}>
-						<Button aria-label="Link">
-							More
-						</Button>
-					</Link>
-				</Stack>
-      </Box>
-    </Center>
+		<Box
+			maxW={'445px'}
+			w={'full'}
+			bg={useColorModeValue('white', 'gray.900')}
+			boxShadow={'xl'}
+			rounded={'md'}
+			p={6}
+			overflow={'hidden'}
+			transition= {"transform 0.25s ease-in-out"}
+			_hover={{transform: 'scale(1.05, 1.05)'}}
+			marginInline={'5'}>
+			<Box
+				h={'210px'}
+				bg={'gray.100'}
+				mt={-6}
+				mx={-6}
+				mb={6}
+				pos={'relative'}>
+				<Image
+					minInlineSize={'100%'}
+					height={'100%'}
+					fit={'cover'}
+					src={`/portfolio/assets/${pic}.png`}
+					alt={name}
+				/>
+			</Box>
+			<Stack>
+				<Wrap>
+					{stacks.map((stack) => (
+						<Tag key={stack}>
+							{stack}
+						</Tag>
+					))}
+				</Wrap>
+				<Heading
+					color={useColorModeValue('gray.700', 'white')}
+					fontSize={'2xl'}
+					fontFamily={'body'}>
+					{name}
+				</Heading>
+				<Wrap>
+					{tags.map((tag) => (
+						<Badge key={tag} colorScheme='green'>
+							{tag}
+						</Badge>
+					))}
+				</Wrap>
+				<Text color={'gray.500'}>
+					{desc}
+				</Text>
+			</Stack>
+			<Stack direction={'row-reverse'} marginTop={'5'}>
+				<Link href={link} isExternal style={{ textDecoration: 'none' }}>
+					<Button aria-label="Link">
+						More
+					</Button>
+				</Link>
+			</Stack>
+		</Box>
+	</Center>
 );
 
 export default function Projects() {
