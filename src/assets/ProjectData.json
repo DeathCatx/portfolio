@@ -22,5 +22,17 @@
 		],
 		"link": "https://github.com/DeathCatx/BMI",
 		"pic": "bmi"
+	},
+	"covid-19-my": {
+		"name": "Malaysia COVID-19 Cases Tracker",
+		"desc": "An app that keeps track of the status and its severity of the COVID-19 across Malaysia with features such as heat maps, cards, graphs, and push notifications.",
+		"tags": [
+			"Phone App", "Statistical", "Firebase"
+		],
+		"stacks": [
+			"Java","Android Studio"
+		],
+		"link": "https://github.com/DeathCatx/covid-19-my",
+		"pic": "covid_app"
 	}
 }

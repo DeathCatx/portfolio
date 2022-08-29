@@ -72,7 +72,7 @@ const CreateCard = ( {name, desc, tags, stacks, link, pic}: ProjectList ) => (
 						</Badge>
 					))}
 				</Wrap>
-				<Text color={'gray.500'}>
+				<Text color={'gray.500'} minHeight={'72px'}>
 					{desc}
 				</Text>
 			</Stack>
