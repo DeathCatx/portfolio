@@ -16,7 +16,7 @@ export default function Contact() {
 			<Text fontSize={{ base: 'md', lg: 'lg' }} maxW={'90%'} textAlign={'center'}>
 				Reach out to me
 			</Text>
-			<Link href='mailto:eugenetan904@gmail.com' style={{ textDecoration: 'none' }}>
+			<Link href='mailto:eugenetan002@gmail.com' style={{ textDecoration: 'none' }}>
 				<Button
 					rightIcon={<VscMail/>}
 					colorScheme='twitter'
